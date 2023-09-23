@@ -1,0 +1,46 @@
+HEADER FILES
+
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService 
+from webdriver_manager.chrome import ChromeDriverManager 
+
+CODE FOR SCROLLING
+
+    # last_height = driver.execute_script('return document.body.scrollHeight')
+    # while True: 
+    #     driver.execute_script('window.scrollTo(0, document.body.scrollHeight);') 
+    
+    #     # wait for content to load 
+    #     t.sleep(2) 
+    
+    #     driver.execute_script('window.scrollTo(document.body.scrollHeight, 0);')
+    #     new_height = driver.execute_script('return document.body.scrollHeight') 
+    
+    #     if new_height == last_height: 
+    #         break 
+    #     else:
+    #         last_height = new_height
+    # driver.execute_script("window.scrollTo(0, document.body.scrollHeight)")
+    # t.sleep(3)
+    # driver.execute_script("window.scrollTo(document.body.scrollHeight, 0)")
+    # t.sleep(1)
+
+
+    # print("Error: Apply button not clickable")
+
+    
+    service=ChromeService(ChromeDriverManager().install())
+    # options.add_argument('--disk-cache-dir=C:/Users/Vivek Agrawal/.cache')
+    # options.add_argument('--headless')  # Run Chrome in headless mode (without GUI)
+
+        # element.send_keys('%s' % start_date)
+
+    # wait.until(EC.element_to_be_clickable(('xpath', "//input[@id='startDate']"))).clear()
+    # wait.until(EC.element_to_be_clickable(('xpath', "//input[@id='startDate']"))).send_keys('%s' % start_date)
+
+    # t.sleep(2)
+
+        # element.send_keys('%s' % end_date)
+
+    # wait.until(EC.element_to_be_clickable(('xpath', "//input[@id='endDate']"))).clear()
+    # wait.until(EC.element_to_be_clickable(('xpath', "//input[@id='endDate']"))).send_keys('%s' % end_date)
